@@ -23,7 +23,7 @@ int main()
 	}
 
 	addr.sin_family = AF_INET;
-	addr.sin_port = htons(6000);
+	addr.sin_port = htons(5000);
 	addr.sin_addr.s_addr = htonl(INADDR_LOOPBACK);
 	if(connect(sock, (struct sockaddr *)&addr, sizeof(addr)) < 0)
 	{
